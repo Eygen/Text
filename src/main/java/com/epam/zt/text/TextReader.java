@@ -2,8 +2,11 @@ package com.epam.zt.text;
 
 import java.io.*;
 
-public abstract class TextReader {
-    public static String readFromFile(String filename) throws IOException {
+public class TextReader {
+    public TextReader() {
+    }
+
+    public String readFromFile(String filename) throws IOException {
         StringBuilder sb = new StringBuilder();
         File file = new File(filename);
         try {
